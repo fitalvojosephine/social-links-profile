@@ -1,0 +1,100 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Green: hsl(75, 94%, 57%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --Inter: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--Off-Black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.container {
+  background-color: var(--Dark-Grey);
+  width: 24rem;
+  border-radius: 0.75rem;
+  gap: 1.5rem;
+}
+
+.user-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  gap: 1.5rem;
+}
+
+.jessica-round {
+  border-radius: 50%;
+  width: 5.5rem;
+}
+
+.user-name {
+  font: 700 1.5rem var(--Inter);
+  color: var(--White);
+}
+
+.user-location {
+  font: 700 0.875rem var(--Inter);
+  color: var(--Green);
+  margin-top: 0.625rem;
+}
+
+.quote {
+  font: 400 0.875rem var(--Inter);
+  color: var(--White);
+}
+
+.quote-user {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: grid;
+  text-decoration: none;
+  list-style: none;
+  gap: 1rem;
+  width: 100%;
+}
+
+.social-links a {
+  color: var(--White);
+  text-decoration: none;
+  background-color: var(--Grey);
+  border-radius: 0.5rem;
+  padding: 0.75rem 0;
+  font: 700 0.875rem var(--Inter);
+}
+
+.social-links a:hover {
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
+
+@media (max-width: 23.4375rem) {
+  .container {
+    max-width: 20.4375rem;
+  }
+  .user-content {
+    padding: 1.5rem;
+  }
+}
